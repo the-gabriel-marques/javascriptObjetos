@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando do objeto DATE - escrevendo mes</title>
+</head>
+<body>
+    <script language="JavaScript">
+        var DATA = new Date();
+        var dia = DATA.getDate();
+        var mes = DATA.getMonth();
+        var ano = DATA.getYear();
+        var meses = new Array(11);
+
+        meses[0] = 'Janeiro';
+        meses[1] = 'Fevereiro';
+        meses[2] = 'Março';
+        meses[3] = 'Abril';
+        meses[4] = 'Maio';
+        meses[5] = 'Junho';
+        meses[6] = 'Julho';
+        meses[7] = 'Agosto';
+        meses[8] = 'Setembro';
+        meses[9] = 'Outubro';
+        meses[10] = 'Novembro';
+        meses[11] = 'Dezembro';
+
+        if (ano < 1000) {
+            ano+=1900;
+        }
+
+        document.write(dia + ' de ' + meses[mes] + ' de '+ ano);
+    </script>
+    
+</body>
+</html>

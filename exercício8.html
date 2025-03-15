@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando do objeto DATE - formatado</title>
+</head>
+<body>
+
+    <script language="JavaScript">
+        var DATA = new Date();
+        var dia = DATA.getDate();
+        var mes = DATA.getMonth();
+        var ano = DATA.getYear();
+
+        mes+=1;
+
+        dia = dia.toString();
+        mes = mes.toString();
+        if(dia.length == 1) {
+            dia = '0' + dia;
+        }
+        if(mes.length ==1) {
+            mes = '0' + mes;
+        }
+        if (ano < 1000) {
+            ano +=1900;            
+        }
+        document.write(dia +'/'+ mes +'/'+ ano);
+    </script>
+    
+</body>
+</html>

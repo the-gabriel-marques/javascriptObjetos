@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <script>
+        function Fatorial() {
+            var fat = 1;
+            var cont = 1;
+            var n = parseInt(document.MeuFormulario.limite.value);
+
+            while (cont <= n) {
+                fat *= cont;
+                cont += 1;
+            }
+
+            document.MeuFormulario.saida.value = fat;
+        }
+    </script>
+    
+</body>
+    <form name="MeuFormulario">
+        Entre com um valor inteiro: <input type="text" name="limite" size="4">
+        <br><br>
+        <input type="button" value="processar" onclick="Fatorial()">
+        <br><br>
+        Fatorial = <input type="text" name="saida" size="20">
+    </form>
+
+</html>

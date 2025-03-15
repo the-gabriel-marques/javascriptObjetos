@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 3</title>
+</head>
+
+<script>
+    function DiaSemana() {
+        var hoje = new Date();
+        var dia = hoje.getDay();
+        var semana = new Array(6);
+        semana[0] = 'Domingo';
+        semana[1] = 'Segunda-Feira';
+        semana[2] = 'Terça-Feira';
+        semana[3] = 'Quarta-Feira';
+        semana[4] = 'Quinta-Feira';
+        semana[5] = 'Sexta-Feira';
+        semana[6] = 'Sabado';
+
+        document.write(semana[dia])
+    }
+</script>
+
+<body>
+    <a href="JavaScript:DiaSemana()">
+        Dia da Semana
+    </a>
+</body>
+</html>

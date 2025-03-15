@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Radio Button</title>
+
+    <script>
+        function mudaCor() {
+            for (var i=0; i<document.form_cores.cor.length;i++) {
+                if (document.form_cores[i].checked)
+                    break;
+            }
+            document.bgColor = document.form_cores.cor[i].value
+        }
+    </script>
+</head>
+<body>
+    <form name="form_cores">
+        <input type="Radio" name="cor" value="ffffff" checked> Branco <br/>
+        <input type="Radio" name="cor" value="ff0000" > Vermelho <br/>
+        <input type="Radio" name="cor" value="00ff00" > Verde <br/>
+        <input type="Radio" name="cor" value="0000ff" > Azul <br/>
+        <input type="Radio" name="cor" value="ffff00" > Amarelo <br/>
+        <input type="Radio" name="cor" value="ff00ff" > Lilás <br/>
+        <input type="Radio" name="cor" value="000000" > Preto <br/>
+        <br/>
+        <input type="button" name="" value="Muda Cor" onclick="mudaCor()">
+    </form>
+</body>
+</html>
